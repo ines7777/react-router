@@ -10,11 +10,15 @@ import { useState } from 'react';
 function App() {
 
   const[movies, setMovies]= useState(movieData)
+
+  const[filterTitle, setFilterTitle]= useState("")
+  const[filterRating,setFilterRating]=useState(0)
+
   return (
     <div className="">
       
-      <Filter/>
-      <MovieList movies={movies} setMovies={setMovies}/>
+      <Filter setFilterTitle={setFilterTitle} filterRating={filterRating} setFilterRating={setFilterRating}/>
+      <MovieList movies={movies} setMovies={setMovies} filterTitle={filterTitle} filterRating={filterRating}/>
       
     </div>
   );
