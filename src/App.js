@@ -6,6 +6,7 @@ import MovieCard from './Components/MovieCard';
 import MovieList from './Components/MovieList';
 import {movieData} from './Data';
 import { useState } from 'react';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
 function App() {
 
@@ -13,14 +14,18 @@ function App() {
 
   const[filterTitle, setFilterTitle]= useState("")
   const[filterRating,setFilterRating]=useState(0)
+  console.log({filterRating})
 
   return (
-    <div className="">
+    <Router>
+       <div className="">
       
       <Filter setFilterTitle={setFilterTitle} filterRating={filterRating} setFilterRating={setFilterRating}/>
       <MovieList movies={movies} setMovies={setMovies} filterTitle={filterTitle} filterRating={filterRating}/>
       
     </div>
+    </Router>
+   
   );
 }
 
