@@ -4,7 +4,8 @@ export const movieData=[
         title:"Barbie",
         description:"Barbie movie",
         posterUrl:"https://deadline.com/wp-content/uploads/2023/04/barbie-BARBIE_Character_KATE_InstaVert_1638x2048_DOM_rgb.jpg?w=800",
-        rating:4
+        rating:4,
+        trailer:"zDHYYGqo8EQ"
 
     },
 
@@ -13,8 +14,8 @@ export const movieData=[
         title:"Zoro",
         description:"Zoro movie",
         posterUrl:"https://media-cache.cinematerial.com/p/500x/e2elxe3m/the-legend-of-zorro-poster.jpg?v=1456240464",
-        rating:2
-
+        rating:2,
+        trailer:"7jiE1KUD5vA" 
     },
 
     {
@@ -22,7 +23,8 @@ export const movieData=[
         title:"Batman",
         description:"Batman movie",
         posterUrl:"https://i.ebayimg.com/images/g/zRAAAOSwvaJgJSg1/s-l1600.jpg",
-        rating:3
+        rating:3,
+        trailer:"t9QQ113xnGo"
 
     },
     
